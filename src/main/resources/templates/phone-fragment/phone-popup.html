@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<div class="popup hide__popup" th:fragment="phone-popup">
+    <div class="popup__content">
+        <div class="popup__close">
+<!--            <svg>-->
+<!--                <use xlink:href="./images/sprite.svgp#icon-cross"></use>-->
+                <i class="fa fa-times" aria-hidden="true"></i>
+<!--            </svg>-->
+        </div>
+        <div class="popup__left">
+            <div class="popup-img__container">
+                <img class="popup__img" th:src="@{/phone/images/popup.jpg}" alt="popup">
+            </div>
+        </div>
+        <div class="popup__right">
+            <div class="right__content">
+                <h1>Get Discount <span>30%</span> Off</h1>
+                <p>Sign up to our newsletter and save 30% for you next purchase. No spam, we promise!
+                </p>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email..." class="popup__form">
+                    <a href="#">Subscribe</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
